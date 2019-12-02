@@ -1,0 +1,13 @@
+extends ./../layout/main
+
+block content
+    div.col-xs-12.col-md-12
+        h1 hello Express com passport
+    div.col-xs-12.col-md-12
+        a(href="/auth/logout") Logout
+    div.col-xs-12.col-md-12
+        if (user)
+            h2 Bem vindo ao painel
+        else
+            h2 Voce precisar estar logado
+            a(href="/auth") Clique aqui        
